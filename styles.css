@@ -1,0 +1,322 @@
+/* ================= VARIABLES GLOBALES ================= */
+:root {
+    --font-titles: 'Doto', sans-serif;
+    --font-body: 'Alef', sans-serif;
+
+    --color-text: #fff;
+    --color-primary: #fff; /* Blanco principal */
+    --color-footer-bg: #202020;
+    --color-body-bg: #000;
+}
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-body-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.5;
+}
+
+/* ================= TIPOGRAFÍA ================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titles);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.subtitle {
+    font-family: var(--font-titles);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+}
+
+/* ================= EFECTO VIÑETA GLOBAL ================= */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+section::before,
+section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+section::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,5), transparent);
+}
+
+section::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,5), transparent);
+}
+
+/* ======== TITULAR DEL SITIO (OCULTO VISUALMENTE) ======== */
+.site-title {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.logo img {
+    height: 45px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.logo img:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* ================= NAVEGACIÓN ================= */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-text);
+    border: 2px solid transparent;
+    padding: 5px 12px;
+    border-radius: 6px;
+    transition: transform 0.2s ease, border-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    transform: scale(1.05);
+    border-color: var(--color-primary);
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: url('assets/images/bbRecurso 3@2x.PNG') no-repeat center top / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 32vw;
+    max-width: 650px;
+    opacity: 0.9;
+}
+
+.hero-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* ================= WHO WE ARE ================= */
+.about-section {
+    height: 120vh;
+    width: 100%;
+    background: url('assets/images/gato6++Recurso 101.png') no-repeat center top / cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-text);
+}
+
+.about-text {
+    max-width: 700px;
+    text-align: left;
+    padding-left: 5%;
+    transform: translateY(25%);
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ddd;
+    margin-bottom: 1.2em;
+}
+
+/* ================= PROJECTS ================= */
+.projects-section {
+    background: url('assets/images/CRI05266.jpg') no-repeat center center / cover;
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+/* ================= CONTACT ================= */
+.contact-section {
+    padding: 80px 20px 50px; /* menos espacio inferior */
+    text-align: center;
+    color: var(--color-text);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,1));
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: var(--color-primary);
+    color: #000;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #ccc;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 60px 10px 40px;
+    background: #000;
+    color: var(--color-text);
+    font-size: 1.1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-links a img {
+    height: 40px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: flex-start;
+        background-position: top center;
+        padding: 80px 20px;
+        height: auto;
+    }
+
+    .about-text {
+        padding-left: 0;
+        max-width: 100%;
+        transform: none;
+    }
+
+    .hero-logo {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60vw;
+    }
+}
