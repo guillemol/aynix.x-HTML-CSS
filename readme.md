@@ -7,7 +7,7 @@ Portfolio y presskit personal de **Aynix.x**, diseñador de sonido, productor mu
 ---
 
 ## 🌐 Demo
-👉 [https://tu-usuario.github.io/aynixx-soundxlab](https://tu-usuario.github.io/aynixx-soundxlab)
+👉 [https://guillemol.github.io/aynixx-soundxlab](https://guillemol.github.io/aynixx-soundxlab)
 
 ---
 
