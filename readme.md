@@ -1,32 +1,18 @@
 # Aynix.x Sound:xlab 🎧
 
-![Preview del sitio](assets/images/preview.png)
 
-Portfolio y presskit personal de **Aynix.x**, diseñador de sonido, productor musical y artista multidisciplinar.
+Portfolio y presskit personal Aynix.x, diseño de sonido y producción musical
 
 ---
 
 ## 🌐 Demo
-👉 [https://tu-usuario.github.io/aynixx-soundxlab](https://tu-usuario.github.io/aynixx-soundxlab)
-
----
-
-## 🧩 Estructura del Proyecto
-aynixx-soundxlab/
-│
-├── index.html # Página principal
-├── styles.css # Estilos globales
-└── assets/
-├── images/ # Imágenes utilizadas en el sitio (incluye preview.png)
-└── icons/ # Iconos sociales y gráficos
+👉 [https://guillemol.github.io/aynixx-soundxlab](https://guillemol.github.io/aynixx-soundxlab)
 
 ---
 
 ## 🛠️ Tecnologías
-- **HTML5** semántico  
-- **CSS3** (con Flexbox y Grid)  
-- **Google Fonts:** Alef & Doto  
-- **Diseño Responsive** adaptable a móvil, tablet y escritorio  
+- **HTML5**
+- **CSS3**  
 
 ---
 
@@ -39,6 +25,3 @@ aynixx-soundxlab/
 📺 [YouTube](https://www.youtube.com/@AyniX.X)
 
 ---
-
-## 🪶 Licencia
-Este proyecto está bajo la licencia **MIT**, lo que permite su libre uso y modificación con atribución al autor original.
