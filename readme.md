@@ -1,6 +1,5 @@
 # Aynix.x Sound:xlab 🎧
 
-![Preview del sitio](assets/images/preview.png)
 
 Portfolio y presskit personal de **Aynix.x**, diseñador de sonido, productor musical y artista multidisciplinar.
 
